@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Panel | VE Robotics</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="admin">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">VE</span>
+          <div>
+            <strong>VE Robotics</strong>
+            <small>Vocational Education</small>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="sections.html">Sections</a>
+          <a href="quizzes.html">Quizzes</a>
+          <a href="parts.html">Parts</a>
+          <a href="projects.html">Projects</a>
+          <a href="simulator.html">Simulator</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <p class="eyebrow">Admin Access</p>
+            <h1>VE Robotics Control Center</h1>
+          </div>
+          <button id="resetSiteBtn" class="btn btn-danger">Reset Website</button>
+        </div>
+
+        <div class="stats-grid" id="adminStats"></div>
+
+        <div class="two-col layout-grid">
+          <section class="panel">
+            <h2>Student Monitoring</h2>
+            <div id="studentTable"></div>
+          </section>
+          <section class="panel">
+            <h2>Quiz & Access Control</h2>
+            <div id="quizAdminList"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

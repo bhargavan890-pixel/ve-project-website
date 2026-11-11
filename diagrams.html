@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simulator | VE Robotics</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="simulator">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">VE</span>
+          <div>
+            <strong>VE Robotics</strong>
+            <small>Vocational Education</small>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="sections.html">Sections</a>
+          <a href="quizzes.html">Quizzes</a>
+          <a href="parts.html">Parts</a>
+          <a href="projects.html">Projects</a>
+          <a href="simulator.html" class="active">Simulator</a>
+          <a href="dashboard.html">Dashboard</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <p class="eyebrow">Circuit Lab</p>
+            <h1>Interactive Robotics Simulator</h1>
+          </div>
+        </div>
+
+        <div class="simulator-layout">
+          <div class="panel">
+            <h2>Controller</h2>
+            <div class="sim-control-row">
+              <button id="powerToggle" class="btn">Turn On</button>
+              <button id="toggleMotor" class="btn btn-secondary">Motor</button>
+              <button id="toggleLed" class="btn btn-secondary">LED</button>
+            </div>
+            <div class="circuit-board">
+              <div class="component battery">Battery</div>
+              <div class="component switch">Switch</div>
+              <div class="component resistor">Resistor</div>
+              <div class="component led" id="ledStatus">LED</div>
+              <div class="component motor" id="motorStatus">Motor</div>
+              <div class="component arduino">Arduino</div>
+            </div>
+          </div>
+
+          <div class="panel">
+            <h2>Simulation Notes</h2>
+            <ul class="check-list">
+              <li>Power flow begins when the circuit is enabled.</li>
+              <li>Motor spins when current reaches the actuator circuit.</li>
+              <li>LED glows when the output path is complete.</li>
+              <li>Use safe current values for real hardware.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

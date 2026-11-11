@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | VE Robotics</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="dashboard">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">VE</span>
+          <div>
+            <strong>VE Robotics</strong>
+            <small>Vocational Education</small>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="sections.html">Sections</a>
+          <a href="quizzes.html">Quizzes</a>
+          <a href="parts.html">Parts</a>
+          <a href="projects.html">Projects</a>
+          <a href="simulator.html">Simulator</a>
+          <a href="chat.html">Chat</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="page-shell">
+      <div class="container">
+        <div class="page-header">
+          <div>
+            <p class="eyebrow">Student Dashboard</p>
+            <h1 id="dashboardTitle">Welcome</h1>
+          </div>
+          <button id="logoutBtn" class="btn btn-secondary">Logout</button>
+        </div>
+
+        <div class="stats-grid" id="dashboardStats"></div>
+
+        <div class="two-col layout-grid">
+          <section class="panel">
+            <h2>Recent Activity</h2>
+            <ul class="activity-list" id="activityList"></ul>
+          </section>
+          <section class="panel">
+            <h2>Student Profile</h2>
+            <div id="profileCard" class="profile-card"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

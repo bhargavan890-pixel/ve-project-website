@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | VE Robotics</title>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body data-page="login">
+    <header class="topbar">
+      <div class="container nav-wrap">
+        <div class="brand">
+          <span class="brand-mark">VE</span>
+          <div>
+            <strong>VE Robotics</strong>
+            <small>Vocational Education</small>
+          </div>
+        </div>
+        <nav class="main-nav">
+          <a href="index.html">Home</a>
+          <a href="sections.html">Sections</a>
+          <a href="quizzes.html">Quizzes</a>
+          <a href="parts.html">Parts</a>
+          <a href="projects.html">Projects</a>
+          <a href="simulator.html">Simulator</a>
+          <a href="admin.html">Admin</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="auth-page">
+      <div class="container auth-shell">
+        <div class="auth-card">
+          <p class="eyebrow">Welcome Back</p>
+          <h1>Student Login</h1>
+          <form id="loginForm">
+            <label>
+              Full Name
+              <input type="text" id="studentName" placeholder="Enter your name" required />
+            </label>
+            <label>
+              Section
+              <select id="studentSection">
+                <option value="8A">8A</option>
+                <option value="8B">8B</option>
+                <option value="8C">8C</option>
+                <option value="8D">8D</option>
+                <option value="8E">8E</option>
+              </select>
+            </label>
+            <label>
+              Password
+              <input type="password" id="studentPassword" value="ve123" required />
+            </label>
+            <button type="submit" class="btn btn-block">Login</button>
+          </form>
+          <p class="auth-note">Demo login: enter your name, choose a class, and continue.</p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-row">
+        <p>© 2026 VE Robotics Academy</p>
+      </div>
+    </footer>
+
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
